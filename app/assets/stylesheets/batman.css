@@ -1,0 +1,6 @@
+.pages.batman{
+
+	background-image: url("<%= asset_path 'Batman.jpg' %>");
+	background-repeat: no-repeat;
+
+}

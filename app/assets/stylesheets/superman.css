@@ -1,0 +1,4 @@
+.pages.superman{
+	background-image: url("<%= asset_path 'SupermanRoss.png' %>");
+	background-repeat: no-repeat;
+}
