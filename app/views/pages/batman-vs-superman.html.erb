@@ -3,13 +3,36 @@
   	<div class="batman">
   		<img src="<%= asset_path 'Batman.jpg' %> " class="img-responsive" alt="Responsive image">
       <% link_to "Batman",pages_batman_path%>
+      <form class="form-inline" method="POST" action="<%= pages_save_batmen_path %>" >
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="correo@correo.com">
+      </div>
+      <button type="submit" class="btn btn-default">VOTAR</button>
+    </form>
   	</div>
   </div>
   <div class="col-md-6">
   	<div class="superman">
   		<img src="<%= asset_path 'SupermanRoss.png' %> " class="img-responsive" alt="Responsive image">
       <%link_to "Superman",pages_superman_path%>
-
+    <form class="form-inline" method="POST" action="<%= pages_save_superman_path %>">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" name= class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" name ="email" placeholder="correo@correo.com">
+      </div>
+      <button type="submit"  name= "enviar" value="enviar"class="btn btn-default">VOTAR</button>
+    </form>
   	</div>
   </div>
 </div>
