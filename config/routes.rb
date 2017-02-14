@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   post	'pages/save_batmen'
   post  'pages/save_superman'
   root 'pages#batman-vs-superman' 	
+  get 	'vendor/assets/imgs'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
