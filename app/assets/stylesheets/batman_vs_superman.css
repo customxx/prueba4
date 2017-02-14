@@ -1,0 +1,9 @@
+.pages.batman_vs_superman{
+
+	background-image: url("<%= asset_path 'SupermanRoss.png' %>");
+	background-repeat: no-repeat;
+
+	background-image: url("<%= asset_path 'Batman.jpg' %>");
+	background-repeat: no-repeat;
+
+}
